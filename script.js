@@ -1,5 +1,17 @@
 function minDate(dates) {
   //write you code here
+	if (dates.length === 0) 
+		return null;
+	let min = dates[0];
+	for (let date of dates) 
+	{
+	    if (date < min) 
+		{
+			min = date;
+	    }
+	}
+
+  return min;
 }
 
 // Do not change the code
